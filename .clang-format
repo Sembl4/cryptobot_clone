@@ -1,0 +1,6 @@
+BasedOnStyle: google
+DerivePointerAlignment: false
+IncludeBlocks: Preserve
+IndentWidth: 4
+AccessModifierOffset: -2
+NamespaceIndentation: None

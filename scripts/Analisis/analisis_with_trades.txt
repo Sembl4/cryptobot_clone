@@ -1,0 +1,152 @@
+Выгодных треугольников за  12  часов работы:  2701 
+Выгодных треугольников после обрезания по stepSize:  550 (которые выполняться)
+
+Под словом <выгода> подразумевается чистая выгода с учетом всех комиссий в процентах.
+ Минимальная выгода с одного треугольника:  100.003 % (Пример 1)
+ Максимальная выгода с одного треугольника:  112.10499999999999 % (Пример 2)
+ Средняя выгода с 550 треугольников:  100.55761818181817 %
+
+Под словом <прибыль> подразумевается чистая прибыль с учетом всех комиссий в USDT
+ Минимальная прибыль с одного треугольника:  0.00042947639999963485 USDT (Пример 3)
+ Максимальная прибыль с одного треугольника:  92.96255780000001 USDT (Пример 4)
+ Средняя прибыль:  2.0434879783192854 USDT
+ Суммарная прибыль:  1123.918388075607 USDT 
+
+Под словом <вложение> подразумевается сколько мы должны вложить в треугольник USDT
+ Минимальное вложение в один треугольник:  10.32 USDT (Пример 5)
+ Максимальное вложение в один треугольник:  8413.523299999999 USDT (Пример 6)
+ Среднее вложение:  522.5237766923644 USDT 
+
+Примеры (могут совпадать):
+------Пример 1 
+
+ LOG:1672203625692: Triangle:  1102
+ BUSDUSDT BUY ; RAYBUSD BUY ; RAYUSDT SELL ;
+ BUSDUSDT BUY 
+ volume: 2.60686e+07 
+ price: 1.0003 
+ RAYBUSD BUY 
+ volume: 2664.2 
+ price: 0.1642 
+ RAYUSDT SELL 
+ volume: 3565.7 
+ price: 0.165 
+ Benefit: 1.00457 
+ IS beneficial by prices
+ Volumes counted: start: 437 
+ middle: 2661.3  leftover:  2.9 
+ finish: 2661.3  leftover:  2.9 
+ GoodFilters 
+ New benefit:  1.00228 
+LOG:1672203625692: Triangle check costed:  14800 nanoseconds 
+
+------Пример 2 
+
+ LOG:1672200152191: Triangle:  1972
+ BIFIUSDT BUY ; BIFIBUSD SELL ; BUSDUSDT SELL ;
+ BIFIUSDT BUY 
+ volume: 0.035 
+ price: 456.9 
+ BIFIBUSD SELL 
+ volume: 0.156 
+ price: 528.3 
+ BUSDUSDT SELL 
+ volume: 7.53646e+07 
+ price: 1.0002 
+ Benefit: 1.1565 
+ IS beneficial by prices
+ Volumes counted: start: 0.035 
+ middle: 0.035  leftover:  0 
+ finish: 18  leftover:  0.4905 
+ GoodFilters 
+ New benefit:  1.1233 
+LOG:1672200152191: Triangle check costed:  54701 nanoseconds 
+
+------Пример 3 
+
+ LOG:1672207469548: Triangle:  521
+ ETHUSDT BUY ; REIETH BUY ; REIUSDT SELL ;
+ ETHUSDT BUY 
+ volume: 65.7559 
+ price: 1192.99 
+ REIETH BUY 
+ volume: 514.7 
+ price: 2.336e-05 
+ REIUSDT SELL 
+ volume: 15075.9 
+ price: 0.028 
+ Benefit: 1.00473 
+ IS beneficial by prices
+ Volumes counted: start: 0.012 
+ middle: 513.6  leftover:  1.1 
+ finish: 513.6  leftover:  1.1 
+ GoodFilters 
+ New benefit:  1.00228 
+LOG:1672207469548: Triangle check costed:  55301 nanoseconds 
+
+------Пример 4 
+
+ LOG:1672192368717: Triangle:  1257
+ TROYUSDT BUY ; TROYBUSD SELL ; BUSDUSDT SELL ;
+ TROYUSDT BUY 
+ volume: 4.3523e+06 
+ price: 0.0028 
+ TROYBUSD SELL 
+ volume: 2.46115e+06 
+ price: 0.00285 
+ BUSDUSDT SELL 
+ volume: 6.9255e+07 
+ price: 1.0002 
+ Benefit: 1.01806 
+ IS beneficial by prices
+ Volumes counted: start: 2.46115e+06 
+ middle: 2.46115e+06  leftover:  0 
+ finish: 7014  leftover:  0.2661 
+ GoodFilters 
+ New benefit:  1.01574 
+LOG:1672192368718: Triangle check costed:  75800 nanoseconds 
+
+------Пример 5 
+
+ LOG:1672197130851: Triangle:  1582
+ AXSUSDT BUY ; AXSBIDR SELL ; USDTBIDR BUY ;
+ AXSUSDT BUY 
+ volume: 505.92 
+ price: 6.45 
+ AXSBIDR SELL 
+ volume: 1.604 
+ price: 102500 
+ USDTBIDR BUY 
+ volume: 47460.9 
+ price: 15692 
+ Benefit: 1.01271 
+ IS beneficial by prices
+ Volumes counted: start: 1.6 
+ middle: 1.6  leftover:  0.004 
+ finish: 10.4  leftover:  0.0773133 
+ GoodFilters 
+ New benefit:  1.00549 
+LOG:1672197130851: Triangle check costed:  57700 nanoseconds 
+
+------Пример 6 
+
+ LOG:1672206262531: Triangle:  1094
+ BUSDUSDT BUY ; ADXBUSD BUY ; ADXUSDT SELL ;
+ BUSDUSDT BUY 
+ volume: 2.78324e+07 
+ price: 1.0003 
+ ADXBUSD BUY 
+ volume: 72017 
+ price: 0.1168 
+ ADXUSDT SELL 
+ volume: 133321 
+ price: 0.1175 
+ Benefit: 1.00569 
+ IS beneficial by prices
+ Volumes counted: start: 8411 
+ middle: 72011  leftover:  6 
+ finish: 72011  leftover:  6 
+ GoodFilters 
+ New benefit:  1.00342 
+LOG:1672206262531: Triangle check costed:  60901 nanoseconds 
+
